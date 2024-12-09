@@ -1,0 +1,18 @@
+div{
+     perspective: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+.square{
+     width: 200px;
+     height: 200px;
+     background: grey;
+     transform: rotate(45deg);
+     animation: rotateAnimation 1s linear infinite;
+}
+@keyframes rotationAnimation{
+     from{transform: rotateY(45deg);}
+     to{transform: rotateY(225deg);}
+}
